@@ -1,0 +1,15 @@
+{
+  "name": "cumulocity-docker-application",
+  "version": "1.0.0",
+  "description": "Web interface for docker",
+  "main": "index.js",
+  "dependencies": {
+    "cumulocity-ui-build": "http://resources.cumulocity.com/webapps/ui/8.19.16.tar.gz"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Markus Peterson (marcus17777@gmail.com)",
+  "license": "ISC"
+}

@@ -1,0 +1,59 @@
+<c8y-ui-action-bar-set>
+  <button type="button" class="btn btn-link ng-binding ng-scope" ng-click="load()">
+    <i ng-class="{'fa-spin': refreshLoading}" class="fa fw fa-refresh"></i>
+    Reload
+  </button>
+</c8y-ui-action-bar-set>
+
+
+<div class="card">
+  <div class="card-header separator">
+    <h4 class="card-title">Docker images</h4> 
+  </div>
+  <div style="max-height: 500px; overflow: auto;">
+    <table class="table table-striped table-hover">
+      <colgroup>
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th ng-repeat="header in headers">{{ header }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="image in images">
+          <td>
+            <label style="display: block;">
+              <input style="margin: 0 auto;" class="checkbox" type="checkbox" ng-click="selector.select(image, $event.target.checked)"/>
+            </label>
+          </td>
+          <td ng-repeat="key in headers">{{ image[key] }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card-footer separator">
+    <button class="btn btn-danger" ng-click="deleteSelected()">
+      Delete selected
+    </button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header-actions separator">
+    <h4 class="card-title">Pull image</h4>
+  </div>
+  <div>
+    <div class="card-block">
+      <div class="form-group">
+        <label>Image</label>
+        <input class="form-control" type="text" ng-model="pullImageForm.image">
+      </div>
+    </div>
+  </div>
+  <div class="card-footer separator">
+    <button class="btn btn-primary" ng-click="pullImage()">
+      Pull
+    </button>
+  </div>
+</div>

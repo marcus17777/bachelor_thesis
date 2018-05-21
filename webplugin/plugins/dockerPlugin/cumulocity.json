@@ -1,0 +1,16 @@
+{
+  "name": "Docker service plugin",
+  "description": "Docker service that provides functions to send Docker operations and receiving Docker data",
+  "ngModules": [
+    "myapp.dockerPlugin"
+  ],
+  "js": [
+    "module.js",
+    "config.js",
+    "DockerService.js",
+    "Selector.js",
+    "dockerContainers/controller.js",
+    "dockerImages/controller.js"
+  ]
+}
+
