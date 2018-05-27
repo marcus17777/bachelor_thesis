@@ -1,7 +1,7 @@
 {
   "availability": "PRIVATE",
   "contextPath": "docker",
-  "key": "dockerapplication-appkey",
+  "key": "docker-appkey",
   "name": "dockerapplication",
   "resourcesUrl": "/",
   "type": "HOSTED",
