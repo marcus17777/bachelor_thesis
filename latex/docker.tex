@@ -515,7 +515,7 @@
   luuakse Javascriptis kasutades Angular.js raamistikku. Teine osa on Cumulocity agent,
   mis vahendab infot Cumulocity platvormi ja seadmel töötava Dockeri tarkvara vahel.
   See luuakse Javas ja põhineb Cumulocity Bitbucketi
-  repositooriumist pärit näitekoodil (Lisa \nameref{sec:lisa_näidiskood}).
+  repositooriumist pärit näitekoodil~\cite{cumulocityExamplesRepository}.
 
   Lõpptulemuseks on agentrakendus ja veebiliidese moodul, mis on vabavaralised ehk igaüks võib
   vaadata ja kopeerida koodi enda kasutamise huvides. See võib olla abiks praegustele
@@ -832,7 +832,7 @@
   \section{Praktiline osa}
   Käesolevas peatükis kirjeldatakse Cumulocity platvormi liidese loomist agendi ja veebiliidese
   mooduli näol. Kogu praktilises osas valminud kood on leitav autori Githubi
-  repositooriumist~\cite{SolutionGithubRepository}.
+  repositooriumist (Lisa \nameref{sec:lisa_lahenduserepo}).
  
   \subsection{Nõuded}
   Loodav Cumulocity liides jaguneb kaheks: veebiliidese moodul ja agent.
@@ -934,7 +934,7 @@
   Kolmandaks on Lodash, mis teeb Javascripti objektidega töötamise lihtsamaks.
  
   Seadmel töötav agent luuakse Java programmeerimiskeeles. Autor otsustas agendi luua Cumulocity
-  poolt valminud näitel, mis asub ettevõtte Bitbucketi repositooriumis (Lisa \nameref{sec:lisa_näidiskood}).
+  poolt valminud näitel, mis asub ettevõtte Bitbucketi repositooriumis~\cite{cumulocityExamplesRepository}.
   Näide on loodud
   väljalülitatavate moodulite põhimõttel, mis tähendab, et Dockeri funktsionaalsusega agendi
   loomiseks piisab näidisagendile uue mooduli loomisest. Autor leiab, et see tagab loodava liidese
@@ -1215,7 +1215,7 @@
   Loodav agent põhineb Cumulocity näidisagendi koodil, millele luuakse ''docker-driver''
   nimeline moodul Dockeri spetsiifiliste
   funktsioonide jaoks. Sellest parema arusaama saamiseks soovitab autor korra vaadata
-  Cumulocity näidisagendi projekti struktuuri (Lisa \nameref{sec:lisa_näidiskood}).
+  Cumulocity näidisagendi projekti struktuuri~\cite{cumulocityExamplesRepository}.
   Seadmel oleva Dockeriga suhtlemiseks kasutatakse Dockeri käsurea
   programmi.
   Selle välja kutsumisel peame arvestama, et see võib aega võtta ning
@@ -1975,16 +1975,15 @@
   \section*{Lisad}
   \addcontentsline{toc}{section}{Lisad}
    
-  \section*{I. Cumulocity näidisagent}
-  \addcontentsline{toc}{subsection}{I. Cumulocity näidisagent}
-  \label{sec:lisa_näidiskood}
-  Cumulocity ettevõte on valmistanud näidisagendi, mis demonstreerib agendi loomist ning
-  platvormiga suhtlus.
-  Agent on loodud moodulite põhimõttel, et oleks võimalik agenti iga
-  kell lihtsasti laiendada. Agendi projekti struktuur põhineb Mavenil ning on olemas
-  Maveni käsud agendi kompileerimiseks ja pakendamiseks installeerimispakettidesse.
-  Näidisagendi kood on kättesaadav ettevõtte Bitbucketi repositooriumis aadressil
-  \url{https://bitbucket.org/m2m/cumulocity-examples/}.
+  \section*{I. Lahenduse repositoorium}
+  \addcontentsline{toc}{subsection}{I. Lahenduse repositoorium}
+  \label{sec:lisa_lahenduserepo}
+  Autori poolt loodud lahendus on kättesaadav Githubi repositooriumist, mis asub aadressil
+  \url{https://github.com/marcus17777/bachelor_thesis}. Kaustas ''agent'' leidub Cumulocity
+  näidisagendil põhinev agent, mis sisaldab endas docker-driver nimelist moodulit, mis vastutab
+  Dockeri süsteemipiltide ja konteinerite halduse eest. Kaustas ''webplugin'' asub Cumulocity 
+  veebiliidese moodul. Repositooriumist on kättesaadav ka see sama dokument ja LaTeX
+  allikas, mille põhjal see dokument loodi.
   
 
 
